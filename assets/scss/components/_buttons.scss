@@ -1,0 +1,77 @@
+@use '../utils' as *;
+
+/* ---------------------------------------
+  06. buttons css
+ ----------------------------------------- */
+
+/* ------------------------------------------------------------------
+   Template Default Button, Input Styles - Value Change with Your's Need
+-------------------------------------------------------------------- */
+
+ .btnd {
+	line-height: 100%;
+	font-weight: var(--bw-fw-bold);
+	font-family: var(--bw-ff-body);
+	display: inline-block;
+	@include transition(.4s);
+	text-transform: capitalize;
+	font-size: var(--bw-fz-body);   
+  }
+  
+  .btn {
+	border: 0;
+	background: transparent;
+	border-radius: 0;
+	line-height: 1;
+	padding: 0;
+	margin: 0;
+	font-size: inherit;
+  }
+  .btn:focus{
+   box-shadow: none;
+  }
+  .bw-btn-primary {
+		@extend .btnd;    
+		padding: 17px 40px;
+		background: var(--bw-theme-secondary);
+		text-transform: capitalize;
+		color:var(--bw-common-white);
+		@media #{$sm} {
+			padding: 15px 30px;
+		}
+	&.style-1{
+	  overflow: hidden;
+	  position: relative;
+	  z-index: 1;
+	  &::after{
+		content: "";
+		position: absolute;
+		height: 100%;
+		left: 60%;
+		top: 60%;
+		width: 150%;
+		transition: all 0.5s ease;
+		z-index: -1;
+		background: var(--bw-heading-primary);
+		transform: rotate(-25deg);
+	  }
+	  &:hover{
+		background-color: transparent;
+		&::after{
+		  left: -30%;
+		  top: -70%;
+		  height: 470%;
+		}
+	  }
+	}
+	
+	i{
+	  margin-left: 5px;
+	}
+	&:hover {
+		background: var(--bw-theme-primary);
+	}
+  
+  }
+	
+  

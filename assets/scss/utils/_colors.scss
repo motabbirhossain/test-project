@@ -1,0 +1,32 @@
+$colors: (
+
+// Theme Color - Defualt Colors
+    common: (
+        white: #ffffff,
+        black: #000000,
+    ),
+    heading: (
+        thead: #6D7076,
+        primary:  #111117,
+    ),
+    grey: (
+        1: #c5c5c5,
+    ),
+    text: (
+        body: #787878,
+    ),
+    theme: (
+        primary: #EC2526,
+        secondary:  #111117,
+        1: #F5F5F5,
+    ),
+    border: (
+        1: #F5F5F5,
+    ),
+    shadow:(
+        1: rgba(0, 0, 0, 0.1),
+    ),
+    placeholder:(
+        1: #B1B1B1,
+    ),
+);

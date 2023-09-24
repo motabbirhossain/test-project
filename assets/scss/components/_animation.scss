@@ -1,0 +1,53 @@
+/* ----------------------------------
+  02. ANIMATION STYLING
+ ------------------------------------ */
+
+ @keyframes left-right {
+    0%{
+      transform: translateX(0px);
+    }
+    50%{
+      transform: translateX(10px);
+    }
+    100%{
+      transform: translateX(0px);
+    }
+ }
+
+ 
+ @keyframes left {
+  0%{
+    transform: translateX(0px);
+  }
+  70%{
+    transform: translateX(-10px);
+  }
+  100%{
+    transform: translateX(0px);
+  }
+}
+
+ 
+@keyframes right {
+  0%{
+    transform: translateX(0px);
+  }
+  70%{
+    transform: translateX(10px);
+  }
+  100%{
+    transform: translateX(0px);
+  }
+}
+
+@keyframes top-bottom {
+  0%{
+    transform: translateY(0px);
+  }
+  70%{
+    transform: translateY(6px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}

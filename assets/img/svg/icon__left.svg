@@ -1,0 +1,45 @@
+<svg width="23" height="9" viewBox="0 0 23 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- <style>
+      @keyframes pulse {
+        0% {
+          -webkit-transform: scale(1);
+          transform: scale(1);
+        }
+        70% {
+          -webkit-transform: scale(3);
+          transform: scale(3);
+        }
+        100% {
+          -webkit-transform: scale(1);
+          transform: scale(1);
+        }
+      } 
+
+    #path_1,#path_2,#path_3 {
+      animation: 1s ease-in-out 0s infinite pulse;
+    }
+
+    #path_1{
+      animation-delay: 1s;  
+    }
+    #path_2{
+      animation-delay: 1.5s;  
+    }
+    #path_3{
+      animation-delay: 2s;  
+    }
+  </style> -->
+
+
+
+    <g id="path_1">
+        <path  d="M20.2539 8.61914L22.5059 8.61914L19.9834 4.32257L22.5059 0.0259962L20.2539 0.0259961L17.7314 4.32257L20.2539 8.61914Z" fill="#EC2526"/>
+    </g>
+    <g id="path_2">
+        <path d="M11.3877 8.61914L13.6396 8.61914L11.1185 4.32257L13.6396 0.0259962L11.3877 0.0259961L8.86656 4.32257L11.3877 8.61914Z" fill="#EC2526"/>
+    </g>
+    <g id="path_3">
+        <path d="M2.52248 8.61914L4.77441 8.61914L2.25193 4.32257L4.77441 0.0259962L2.52248 0.0259961L3.04883e-06 4.32257L2.52248 8.61914Z" fill="#EC2526"/>
+    </g>
+
+</svg>

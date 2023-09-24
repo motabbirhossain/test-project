@@ -1,0 +1,94 @@
+@use "../utils" as *;
+
+/* ----------------------------------
+	09. section-title css
+ ------------------------------------ */
+
+
+ .section_{
+	&_heading{
+		text-align: center;
+		margin-bottom: 60px;
+		@media #{$md} {
+			margin-bottom: 50px;
+		}
+		@media #{$sm,$xs} {
+			margin-bottom: 40px;
+		}
+	}
+	&_sub_title{
+		
+		color: var(--bw-heading-thead);
+		font-family: var(--bw-ff-heading);
+		font-size: var(--bw-fz-body);
+		font-weight: var(--bw-fw-regular);
+		line-height: 100%;
+		margin-bottom: 20px;
+		.left__img{
+			padding-right: 8px;
+			animation: left 2s ease-in infinite;
+		}
+		.right__img{
+			padding-left: 8px;
+			animation: right 2s ease-in infinite;
+		}
+	}
+	&_title{
+		color: var(--bw-heading-primary);
+		font-family: var(--bw-ff-heading);
+		font-size: var(--bw-fz-h2);
+		font-weight: var(--bw-fw-ebold);
+		line-height: 1.25;
+		letter-spacing: -1.2px;
+		margin-bottom: 0;
+		@media #{$xs} {
+			font-size: 30px;
+		}
+		&.title-2{
+			max-width: 460px;
+			margin: 0% auto;
+		}
+	}
+ }
+
+
+.section__padding{
+	padding-top: 120px;
+	padding-bottom: 90px;
+	@media #{$md} {
+		padding-top: 100px;
+		padding-bottom: 70px;
+	}
+	@media #{$sm} {
+		padding-top: 80px;
+		padding-bottom: 50px;
+	}
+	@media #{$xs} {
+		padding-top: 60px;
+		padding-bottom: 30px;
+	}
+}
+.section__top{
+	padding-top: 120px;
+	@media #{$md} {
+		padding-top: 100px;
+	}
+	@media #{$sm} {
+		padding-top: 80px;
+	}
+	@media #{$xs} {
+		padding-top: 60px;
+	}
+}
+.section__bottom{
+	padding-bottom: 90px;
+	@media #{$md} {
+		padding-bottom: 70px;
+	}
+	@media #{$sm} {
+		padding-bottom: 50px;
+	}
+	@media #{$xs} {
+		padding-bottom: 30px;
+	}
+}
