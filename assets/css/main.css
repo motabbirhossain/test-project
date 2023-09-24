@@ -37,6 +37,7 @@
   --bw-common-black: #000000;
   --bw-heading-thead: #6D7076;
   --bw-heading-primary: #111117;
+  --bw-heading-1: #EC2526;
   --bw-grey-1: #c5c5c5;
   --bw-text-body: #787878;
   --bw-theme-primary: #EC2526;
@@ -270,42 +271,6 @@ button {
   border: none;
 }
 
-.form-control:focus {
-  outline: 1px solid var(--bw-shadow-5);
-  border: 1px solid var(--bw-shadow-5);
-  box-shadow: 0 0 0;
-}
-
-#scrollUp {
-  background-color: var(--bw-theme-secondary);
-  border-radius: 50%;
-  bottom: 20px;
-  color: var(--bw-common-white);
-  font-size: 22px;
-  height: 40px;
-  line-height: 40px;
-  right: 20px;
-  text-align: center;
-  width: 40px;
-  box-shadow: 0px 5px 15px 0px rgba(1, 29, 80, 0.1);
-  font-weight: var(--bw-fw-regular);
-  transition: all 0.4s ease-in-out;
-}
-#scrollUp:hover {
-  background-color: var(--bw-theme-primary);
-}
-
-.scroll-up-btn a {
-  display: inline-block;
-  padding: 16px 20px;
-  border-radius: 10px;
-  line-height: 1;
-  background-color: var(--bw-heading-secondary);
-}
-.scroll-up-btn a:hover {
-  color: var(--bw-common-white);
-}
-
 .animated {
   animation-duration: 1000ms;
   animation-fill-mode: both;
@@ -476,6 +441,43 @@ button {
 /* ----------------------------------
 	08. carousel css
  ------------------------------------ */
+.swiper-pagination {
+  left: 35%;
+  justify-content: center;
+  background: var(--bw-theme-secondary);
+  display: inline-block;
+  width: auto;
+  margin: 0 auto;
+  padding: 10px 30px;
+  -webkit-clip-path: polygon(10% 1%, 100% 0, 90% 100%, 1% 100%);
+          clip-path: polygon(10% 1%, 100% 0, 90% 100%, 1% 100%);
+}
+.swiper-pagination .swiper-pagination-bullet {
+  background: transparent;
+  color: var(--bw-common-white);
+  font-size: 20px;
+  padding: 5px 15px;
+  position: relative;
+  font-family: var(--bw-ff-body);
+  font-weight: var(--bw-fw-sbold);
+}
+.swiper-pagination .swiper-pagination-bullet::after {
+  content: "";
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: var(--bw-theme-1);
+  transform: rotate(25deg);
+}
+.swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  color: var(--bw-heading-1);
+}
+.swiper-pagination .swiper-pagination-bullet:last-child::after {
+  display: none;
+}
+
 /* ----------------------------------
 	09. section-title css
  ------------------------------------ */

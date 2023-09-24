@@ -8,9 +8,23 @@
 
 	$(document).ready(function () {
 		/*==========================
-				Owl Carousel Init
+				Swiper Init
 		============================*/
-			
+		var swiper = new Swiper(".hero__content_right", {
+			loop: true,
+			spaceBetween: 0,
+			effect: "fade",
+			pagination: {
+			  el: ".swiper-pagination",
+			  clickable: true,
+			  renderBullet: function (index, number) {
+				return '<span class="' + number + '">' + (index + 1) + "</span>";
+			  },
+			},
+			autoplay: {
+				delay: 6000,
+			},
+		  });
 		/* ==========================
 				#wow  init
 		=============================*/

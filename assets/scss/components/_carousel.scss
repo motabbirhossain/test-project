@@ -2,3 +2,42 @@
 /* ----------------------------------
 	08. carousel css
  ------------------------------------ */
+
+
+ .swiper-pagination{
+	left: 35%;
+	justify-content: center;
+	background: var(--bw-theme-secondary);
+	display: inline-block;
+	width: auto;
+	margin: 0 auto;
+	padding:10px 30px;
+	clip-path: polygon(10% 1%, 100% 0, 90% 100%, 1% 100%);
+	.swiper-pagination-bullet{
+		background: transparent;
+		color: var(--bw-common-white);
+		font-size: 20px;
+		padding:5px 15px;
+		position: relative;
+		font-family: var(--bw-ff-body);
+		font-weight: var(--bw-fw-sbold);
+		&::after{
+			content: '';
+			width: 1px;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			right: 0;
+			background: var(--bw-theme-1);
+			transform: rotate(25deg);
+		}
+		&.swiper-pagination-bullet-active{
+			color: var(--bw-heading-1);
+		}
+		&:last-child{
+			&::after{
+				display: none;
+			}
+		}
+	}
+ }
