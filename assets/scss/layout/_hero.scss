@@ -29,10 +29,17 @@
 	.bw_scroll__btn{
 		position: absolute;
 		bottom: -30px;
+		@media #{$xs} {
+			left: calc(100% - 60%);			
+		}
 		left: calc(100% - 55%);
 		a{
 			width: 70px;
 			height: 70px;
+			@media #{$xs} {
+				width: 50px;
+				height: 50px;			
+			}
 			border-radius: 500px;
 			display: flex;
 			justify-content: center;
@@ -79,7 +86,7 @@
 	}
 	.hero__right__line{
 		position: absolute;
-		bottom: 30px;
+		bottom: 0;
 		right: 5%;
 		z-index: -2;
 	}
@@ -109,9 +116,21 @@
 		.hero__title{
 			font-weight: var(--bw-fw-ebold);
 			line-height: 110%;
+			position: relative;
 			letter-spacing: -2.1px;
 			max-width: 550px;
 			margin-bottom: 50px;
+			.text__vector{
+				position: absolute;
+				bottom: -40px;
+				right: 10%;
+				animation: left 4s ease-in infinite;
+				@media #{$xs} {
+					bottom: -20px;
+					right: 0%;
+					max-width: 35%;
+				}
+			}
 			@media #{$lg,$sm} {
 				font-size: 60px;
 			}
@@ -135,8 +154,11 @@
 					bottom: 0;
 					right: 20px;
 					z-index: 1;
+
 				}
-				
+				@media #{$xs} {
+				 	display: none;
+				}
 			}
 		}
 	}
