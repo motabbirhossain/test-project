@@ -15,6 +15,9 @@
 		img{
 			animation: bounce 6s ease-in-out infinite;
 		}
+		@media #{ $sm,$xs} {
+			display: none;
+		}
 	}
 	&::after{
 		content: '';
@@ -58,6 +61,9 @@
 			z-index: 1;
 			bottom: -70px;
 			right: -30px;
+			@media #{ $xs} {
+				right: 0px;
+			}
 		}
 		.contact__item{
 			position: relative;

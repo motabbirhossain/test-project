@@ -1,0 +1,26 @@
+<svg width="676" height="34" viewBox="0 0 676 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <style>
+    @-webkit-keyframes floating-up {
+      from { -webkit-transform: translateX(0px); transform: translateX(0px); }
+      65%  { -webkit-transform: translateX(-10px); transform: translateX(-10px); }
+      to   { -webkit-transform: translateX( 0px); transform: translateX(0px); }    
+    }
+
+    @-webkit-keyframes floating-down {
+      from { -webkit-transform: translateX(0px); transform: translateX(0px); }
+      65%  { -webkit-transform: translateX(10px); transform: translateX(10px); }
+      to   { -webkit-transform: translateX(0px); transform: translateX(0px); }    
+    }
+
+    #line-1{
+      animation: 2s ease-in-out 1s infinite running floating-up; 
+    }
+    #line-2{
+      animation: 2s ease-in-out 1s infinite running floating-down; 
+    }
+    </style>
+
+    <g id="line-1"><rect width="517" height="10" fill="#F5F5F5"/></g>
+    <g id="line-2"><rect x="159" y="24" width="517" height="10" fill="#F5F5F5"/></g>
+    
+</svg>

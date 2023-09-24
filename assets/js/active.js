@@ -8,23 +8,17 @@
 
 	$(document).ready(function () {
 		/*==========================
-				Swiper Init
+			Owl Carousel Init
 		============================*/
-		var swiper = new Swiper(".hero__content_right", {
-			loop: true,
-			spaceBetween: 0,
-			effect: "fade",
-			pagination: {
-			  el: ".swiper-pagination",
-			  clickable: true,
-			  renderBullet: function (index, number) {
-				return '<span class="' + number + '">' + (index + 1) + "</span>";
-			  },
-			},
-			autoplay: {
-				delay: 6000,
-			},
-		  });
+		$('.hero__content_right').owlCarousel({
+			items:1,
+			loop:true,
+			autoplay:true,
+			autoplayTimeout:5000,
+			nav: false,
+			dots: true,
+			dotsData: true,
+		});
 		/* ==========================
 				#wow  init
 		=============================*/
