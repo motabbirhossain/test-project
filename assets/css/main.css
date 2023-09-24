@@ -1136,7 +1136,7 @@ button {
 .single-service-item .service__bth a {
   display: inline-block;
   background-color: var(--bw-theme-primary);
-  padding: 28px 66px 28px 40px;
+  padding: 25px 66px 25px 40px;
   color: var(--bw-common-white);
   -webkit-clip-path: polygon(0 0, 75% 0%, 100% 100%, 0% 100%);
           clip-path: polygon(0 0, 75% 0%, 100% 100%, 0% 100%);
