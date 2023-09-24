@@ -1,5 +1,36 @@
 <svg width="193" height="939" viewBox="0 0 193 939" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="-276.5" cy="469.5" r="469" stroke="#E6E6E6"/>
-<path d="M126.5 469C126.5 691.294 -53.9286 871.5 -276.5 871.5C-499.071 871.5 -679.5 691.294 -679.5 469C-679.5 246.706 -499.071 66.5 -276.5 66.5C-53.9286 66.5 126.5 246.706 126.5 469Z" stroke="#E6E6E6"/>
-<ellipse cx="-276.5" cy="469" rx="336.5" ry="337" fill="#EC2526"/>
+<style>
+     
+ @keyframes pulse {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    70% {
+        -webkit-transform: scale(3);
+        transform: scale(3);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+ } 
+
+    #dot-1,  #dot-2, #dot-3 {
+      animation: pulse 2s ease-in-out infinite;
+      -webkit-animation: pulse 2s ease-in-out infinite;
+      -webkit-transform-origin: center; -ms-transform-origin: center; transform-origin: center; transform-box: fill-box;
+    }
+
+</style>
+
+    <g id="dot_1">
+        <circle  cx="-276.5" cy="469.5" r="469" stroke="#E6E6E6"/>
+    </g>
+    <g id="dot_2">
+        <path d="M126.5 469C126.5 691.294 -53.9286 871.5 -276.5 871.5C-499.071 871.5 -679.5 691.294 -679.5 469C-679.5 246.706 -499.071 66.5 -276.5 66.5C-53.9286 66.5 126.5 246.706 126.5 469Z" stroke="#E6E6E6"/>
+    </g>
+    <g id="dot_3">
+        <ellipse  cx="-276.5" cy="469" rx="336.5" ry="337" fill="#EC2526"/>
+    </g>
 </svg>

@@ -14,14 +14,15 @@
 		/* ==========================
 				#wow  init
 		=============================*/
-		if ($(".wow").length) {
-			var wow = new WOW({
-				boxClass: "wow",
-				animateClass: "animated",
-				mobile: true,
-				live: true,
-			});
-			wow.init();
-		}
+		new WOW().init();
+		// if ($(".wow").length) {
+		// 	var wow = new WOW({
+		// 		boxClass: "wow",
+		// 		animateClass: "animated",
+		// 		mobile: true,
+		// 		live: true,
+		// 	});
+		// 	wow.init();
+		// }
 	});
 })(jQuery); // End jQuery
